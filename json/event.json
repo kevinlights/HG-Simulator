@@ -1,0 +1,638 @@
+{
+
+    "0": {
+
+        "start": "Acidic rain pours down on the arena.",
+
+        "0": {
+            "text": "#name_1 finds a cave and hides there.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : null,
+            "kills": null,
+            "injury": null
+    
+        },
+        "1": {
+            "text": "#name_1 survives.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : null,
+            "kills": null,
+            "injury": null
+    
+        },
+        "2": {
+            "text": "#name_1 hides in the cornucopia.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : null,
+            "kills": null,
+            "injury": null
+        },
+        "3": {
+            "text": "#name_1 and #name_2 hide in the cornucopia.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : null,
+            "kills": null,
+            "injury": null
+        },
+        "4": {
+            "text": "#name_1 and #name_2 hide in the cornucopia. #name_1 pushes #name_2 into the rain.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [2],
+            "kills": [1,1],
+            "injury": null
+        },
+        "5": {
+            "text": "#name_1 and #name_2 hide in the cornucopia. #name_2 pushes #name_1 into the rain.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1],
+            "kills": [2,1],
+            "injury": null
+        },
+        "6": {
+            "text": "#name_1, #name_2 and #name_3 hide in the cornucopia.",
+            "member_size": 3,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : null,
+            "kills": null,
+            "injury": null
+        },
+        "7": {
+            "text": "#name_1, #name_2, #name_3 and #name_4 hide in the cornucopia, but the three tributes throw #name_2 into the rain.",
+            "member_size": 4,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [2],
+            "kills": [1,1,3,1,4,1],
+            "injury": null
+        },
+        "8": {
+            "text": "#name_1, #name_2, #name_3, #name_4, #name_5 and #name_6 hide in the cornucopia and fight. #name_1, #name_2 and #name_5 get pushed into the rain.",
+            "member_size": 6,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1,2,5],
+            "kills": [6,1,3,1,4,1],
+            "injury": null
+        },
+        "9": {
+            "text": "#name_1 is unable to find shelter and dies.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1],
+            "kills": null,
+            "injury": null
+        },
+        "10": {
+            "text": "#name_1 trips face first into a puddle of acidic rain.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1],
+            "kills": null,
+            "injury": null
+        },
+        "11": {
+            "text": "#name_1 injures #name_2 and leaves him/her_2 in the rain to die.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [2],
+            "kills": [1,1],
+            "injury": null
+        },
+        "12": {
+            "text": "#name_1 refuses #name_2 shelter, killing him/her_2.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [2],
+            "kills": [1,1],
+            "injury": null
+        },
+        "13": {
+            "text": "#name_1 shoves #name_2 into a pond of acidic rain, but is pulled in by #name_2, killing them both.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1,2],
+            "kills": [1,1,2,1],
+            "injury": null
+        }
+        
+    },
+
+    
+    "1": {
+
+        "start": "A cloud of poisonous smoke starts to fill the arena.",
+
+        "0": {
+            "text": "#name_1 survives.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : null,
+            "kills": null,
+            "injury": null
+    
+        },
+        "1": {
+            "text": "#name_1 is engulfed in the cloud of poisonous smoke.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1],
+            "kills": null,
+            "injury": null
+    
+        },
+        "2": {
+            "text": "#name_1 sacrifices himself/herself_1 so #name_2 can get away.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1],
+            "kills": null,
+            "injury": null
+        },
+        "3": {
+            "text": "#name_1 slowly pushes #name_2 closer into the cloud until he/she_2 can't resist any more.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [2],
+            "kills": [1,1],
+            "injury": null
+        },
+        "4": {
+            "text": "#name_1 and #name_2 agree to die in the cloud together, but #name_1 pushes #name_2 in without warning.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [2],
+            "kills": [1,1],
+            "injury": null
+        },
+        "5": {
+            "text": "#name_1 and #name_2 decide to run into the cloud together.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1,2],
+            "kills": null,
+            "injury": null
+        }
+
+
+    },
+
+  
+    "2": {
+
+        "start": "A monstrous hurricane wreaks havoc on the arena.",
+
+        "0": {
+            "text": "#name_1 survives.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : null,
+            "kills": null,
+            "injury": null
+    
+        },
+        "1": {
+            "text": "#name_1 is sucked into the hurricane.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1],
+            "kills": null,
+            "injury": null
+    
+        },
+        "2": {
+            "text": "#name_1 is incapacitated by flying debris and dies.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1],
+            "kills": null,
+            "injury": null
+        },
+        "3": {
+            "text": "#name_1 pushes #name_2 into an incoming boulder.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [2],
+            "kills": [1,1],
+            "injury": null
+        },
+        "4": {
+            "text": "#name_1 stabs #name_2, then pushes him/her_2 close enough to the hurricane to suck him/her_2 in.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [2],
+            "kills": [1,1],
+            "injury": null
+        },
+        "5": {
+            "text": "#name_1 tries to save #name_2 from being sucked into the hurricane, only to be sucked in as well.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1,2],
+            "kills": null,
+            "injury": null
+        }
+
+
+    },
+
+    
+    "3": {
+
+        "start": "A swarm of tracker jackers invades the arena.",
+
+        "0": {
+            "text": "#name_1 survives.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : null,
+            "kills": null,
+            "injury": null
+    
+        },
+        "1": {
+            "text": "#name_1 is stung to death.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1],
+            "kills": null,
+            "injury": null
+    
+        },
+        "2": {
+            "text": "#name_1 slowly dies from the tracker jacker toxins.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1],
+            "kills": null,
+            "injury": null
+        },
+        "3": {
+            "text": "#name_1 knocks #name_2 unconscious and leaves him/her_2 there as bait.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [2],
+            "kills": [1,1],
+            "injury": null
+        },
+        "4": {
+            "text": "While running away from the tracker jackers, #name_1 grabs #name_2 and throws him/her_2 to the ground.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [2],
+            "kills": [1,1],
+            "injury": null
+        },
+        "5": {
+            "text": "#name_1 and #name_2 run out of places to run and are stung to death.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1,2],
+            "kills": null,
+            "injury": null
+        }
+
+
+    },
+    
+    
+    "4": {
+
+        "start": "A tsunami rolls into the the arena.",
+
+        "0": {
+            "text": "#name_1 survives.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : null,
+            "kills": null,
+            "injury": null
+    
+        },
+        "1": {
+            "text": "#name_1 is swept away.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1],
+            "kills": null,
+            "injury": null
+    
+        },
+        "2": {
+            "text": "#name_1 fatally injures himself/herself_1 on debris.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1],
+            "kills": null,
+            "injury": null
+        },
+        "3": {
+            "text": "#name_1 holds #name_2 underwater to drown.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [2],
+            "kills": [1,1],
+            "injury": null
+        },
+        "4": {
+            "text": "#name_1 defeats #name_2, but throws him/her_2 in the water to make sure he/she_2 dies.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [2],
+            "kills": [1,1],
+            "injury": null
+        },
+        "5": {
+            "text": "#name_1 and #name_2 smash their heads together as the tsunami rolls in, leaving them both to drown.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1,2],
+            "kills": null,
+            "injury": null
+        }
+
+
+    },
+    
+    "5": {
+
+        "start": "The arena's border begins to rapidly contract.",
+
+        "0": {
+            "text": "#name_1 survives.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : null,
+            "kills": null,
+            "injury": null
+    
+        },
+        "1": {
+            "text": "#name_1 is electrocuted by the border.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1],
+            "kills": null,
+            "injury": null
+    
+        },
+        "2": {
+            "text": "#name_1 trips on a tree root and is unable to recover fast enough.",
+            "member_size": 1,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1],
+            "kills": null,
+            "injury": null
+        },
+        "3": {
+            "text": "#name_1 restrains #name_2 to a tree and leaves him/her_2 to die.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [2],
+            "kills": [1,1],
+            "injury": null
+        },
+        "4": {
+            "text": "#name_1 pushes #name_2 into the border while he/she_2 is not paying attention.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [2],
+            "kills": [1,1],
+            "injury": null
+        },
+        "5": {
+            "text": "Thinking they could escape, #name_1 and #name_2 attempt to run through the border together.",
+            "member_size": 2,
+            "hunger": null,
+            "thirst": null,
+            "health": null,
+            "food": null,
+            "water": null,
+            "healItem": null,
+            "deaths" : [1,2],
+            "kills": null,
+            "injury": null
+        }
+
+
+    }
+
+}

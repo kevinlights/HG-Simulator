@@ -1,0 +1,139 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://image/menu/save_menu/save_item_plus.png" type="Texture" id=1]
+[ext_resource path="res://image/menu/save_menu/save_item.png" type="Texture" id=2]
+[ext_resource path="res://fonts/Play-Bold.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://scripts/menu/save_menu/save_item.gd" type="Script" id=4]
+[ext_resource path="res://image/menu/play_menu/immun_box.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 50
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 60
+font_data = ExtResource( 3 )
+
+[node name="save_item" type="TextureRect"]
+margin_right = 1329.0
+margin_bottom = 293.0
+texture = ExtResource( 2 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="save_item_plus" type="Sprite" parent="."]
+visible = false
+position = Vector2( 664.308, 146.316 )
+texture = ExtResource( 1 )
+
+[node name="overlay" type="Node2D" parent="."]
+
+[node name="date" type="Label" parent="overlay"]
+margin_left = 11.6818
+margin_top = 6.36359
+margin_right = 759.682
+margin_bottom = 77.3636
+custom_fonts/font = SubResource( 2 )
+text = "Date:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="status" type="Label" parent="overlay"]
+margin_left = 15.0454
+margin_top = 134.18
+margin_right = 763.045
+margin_bottom = 205.18
+custom_fonts/font = SubResource( 3 )
+text = "Game status:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="l_load" type="RichTextLabel" parent="overlay"]
+margin_left = 700.196
+margin_top = 44.948
+margin_right = 871.196
+margin_bottom = 120.948
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "load"
+text = "load"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="l_delete" type="RichTextLabel" parent="overlay"]
+margin_left = 1032.36
+margin_top = 172.41
+margin_right = 1228.36
+margin_bottom = 248.41
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "delete"
+text = "delete"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="l_overwrite" type="RichTextLabel" parent="overlay"]
+margin_left = 978.705
+margin_top = 34.6782
+margin_right = 1279.7
+margin_bottom = 114.678
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "overwrite"
+text = "overwrite"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b_overwrite" type="TextureButton" parent="overlay"]
+margin_left = 928.349
+margin_top = 20.1815
+margin_right = 1164.35
+margin_bottom = 117.182
+rect_scale = Vector2( 1.60224, 1.18653 )
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b_delete" type="TextureButton" parent="overlay"]
+margin_left = 928.349
+margin_top = 154.725
+margin_right = 1164.35
+margin_bottom = 251.725
+rect_scale = Vector2( 1.60224, 1.18653 )
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b_load" type="TextureButton" parent="overlay"]
+margin_left = 595.371
+margin_top = 15.5877
+margin_right = 831.371
+margin_bottom = 112.588
+rect_scale = Vector2( 1.3579, 1.43995 )
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="mouse_entered" from="overlay/b_overwrite" to="." method="_on_b_overwrite_mouse_entered"]
+[connection signal="mouse_exited" from="overlay/b_overwrite" to="." method="_on_b_overwrite_mouse_exited"]
+[connection signal="pressed" from="overlay/b_overwrite" to="." method="_on_b_overwrite_pressed"]
+[connection signal="mouse_entered" from="overlay/b_delete" to="." method="_on_b_delete_mouse_entered"]
+[connection signal="mouse_exited" from="overlay/b_delete" to="." method="_on_b_delete_mouse_exited"]
+[connection signal="pressed" from="overlay/b_delete" to="." method="_on_b_delete_pressed"]
+[connection signal="mouse_entered" from="overlay/b_load" to="." method="_on_b_load_mouse_entered"]
+[connection signal="mouse_exited" from="overlay/b_load" to="." method="_on_b_load_mouse_exited"]
+[connection signal="pressed" from="overlay/b_load" to="." method="_on_b_load_pressed"]

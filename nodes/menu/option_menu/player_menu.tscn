@@ -1,0 +1,362 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://image/menu/option_menu/back_player.png" type="Texture" id=1]
+[ext_resource path="res://image/menu/play_menu/item_box.png" type="Texture" id=2]
+[ext_resource path="res://image/menu/play_menu/item_arrow_pressed.png" type="Texture" id=3]
+[ext_resource path="res://image/menu/play_menu/item_arrow.png" type="Texture" id=4]
+[ext_resource path="res://scripts/menu/option_menu/player_menu.gd" type="Script" id=5]
+[ext_resource path="res://fonts/Play-Bold.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://nodes/system/player.tscn" type="PackedScene" id=7]
+[ext_resource path="res://nodes/system/szene_changer.tscn" type="PackedScene" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 35
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 70
+font_data = ExtResource( 6 )
+
+[node name="player_menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="back_player" type="Sprite" parent="."]
+position = Vector2( 962.676, 544.477 )
+scale = Vector2( 1.0125, 1.0157 )
+texture = ExtResource( 1 )
+
+[node name="background" type="Node2D" parent="."]
+
+[node name="i_0" type="Sprite" parent="background"]
+position = Vector2( 961.847, 355 )
+texture = ExtResource( 2 )
+
+[node name="i_1" type="Sprite" parent="background"]
+position = Vector2( 1326, 355 )
+texture = ExtResource( 2 )
+
+[node name="i_2" type="Sprite" parent="background"]
+position = Vector2( 1704.73, 355 )
+texture = ExtResource( 2 )
+
+[node name="i_3" type="Sprite" parent="background"]
+position = Vector2( 971.163, 818.678 )
+texture = ExtResource( 2 )
+
+[node name="i_4" type="Sprite" parent="background"]
+position = Vector2( 967.001, 991.707 )
+texture = ExtResource( 2 )
+
+[node name="i_5" type="Sprite" parent="background"]
+position = Vector2( 1753.66, 1001.82 )
+texture = ExtResource( 2 )
+
+[node name="i_6" type="Sprite" parent="background"]
+position = Vector2( 1753.66, 831.959 )
+texture = ExtResource( 2 )
+
+[node name="i_7" type="Sprite" parent="background"]
+position = Vector2( 1326, 645.275 )
+texture = ExtResource( 2 )
+
+[node name="label" type="Node2D" parent="."]
+
+[node name="winner" type="Label" parent="label"]
+margin_left = 860.057
+margin_top = 180.366
+margin_right = 1069.06
+margin_bottom = 277.366
+custom_fonts/font = SubResource( 1 )
+text = "Number of 
+winners"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player_number" type="Label" parent="label"]
+margin_left = 27.0
+margin_top = 16.0
+margin_right = 669.0
+margin_bottom = 113.0
+custom_fonts/font = SubResource( 1 )
+text = "Current number of players: 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="group" type="Label" parent="label"]
+margin_left = 1215.37
+margin_top = 204.728
+margin_right = 1445.37
+margin_bottom = 301.728
+custom_fonts/font = SubResource( 1 )
+text = "Group mode"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="arena" type="Label" parent="label"]
+margin_left = 1586.2
+margin_top = 206.748
+margin_right = 1832.2
+margin_bottom = 303.748
+custom_fonts/font = SubResource( 1 )
+text = "Arena events"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="death_risk" type="Label" parent="label"]
+margin_left = 1142.96
+margin_top = 507.451
+margin_right = 1510.96
+margin_bottom = 604.451
+custom_fonts/font = SubResource( 1 )
+text = "Probability of dying"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="water_need" type="Label" parent="label"]
+margin_left = 1115.8
+margin_top = 771.249
+margin_right = 1522.8
+margin_bottom = 868.249
+custom_fonts/font = SubResource( 1 )
+text = "Water consumption
+per day (in points)"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="food_need" type="Label" parent="label"]
+margin_left = 1118.65
+margin_top = 943.085
+margin_right = 1525.65
+margin_bottom = 1040.09
+custom_fonts/font = SubResource( 1 )
+text = "Food consumption
+per day (in points)"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="probability" type="Label" parent="label"]
+margin_left = 1193.0
+margin_top = 598.0
+margin_right = 1456.0
+margin_bottom = 695.0
+custom_fonts/font = SubResource( 1 )
+text = "middle"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="start" type="RichTextLabel" parent="label"]
+margin_left = 1649.0
+margin_top = 973.0
+margin_right = 1865.0
+margin_bottom = 1027.0
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+bbcode_text = "Start game"
+text = "Start game"
+
+[node name="back" type="RichTextLabel" parent="label"]
+margin_left = 1672.54
+margin_top = 804.821
+margin_right = 1888.54
+margin_bottom = 858.821
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+bbcode_text = "Go back"
+text = "Go back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="scroll" type="ScrollContainer" parent="label"]
+margin_left = 27.0
+margin_top = 160.0
+margin_right = 780.0
+margin_bottom = 1044.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vbox" type="VBoxContainer" parent="label/scroll"]
+
+[node name="hint_1" type="Label" parent="label"]
+margin_left = 805.418
+margin_top = 35.3678
+margin_right = 1907.42
+margin_bottom = 120.368
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.603922, 0.517647, 0.517647, 1 )
+text = "* Group mode: If only players that belong to one group are alive,
+                              all players that are left over win."
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hint_2" type="Label" parent="label"]
+margin_left = 11.7003
+margin_top = 53.1483
+margin_right = 1113.7
+margin_bottom = 138.148
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.603922, 0.517647, 0.517647, 1 )
+text = "*At least two players are needed for the game."
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button" type="Node2D" parent="."]
+
+[node name="death_risk_left" type="TextureButton" parent="button"]
+margin_left = 1119.29
+margin_top = 600.0
+margin_right = 1174.29
+margin_bottom = 687.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 3 )
+texture_focused = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="death_risk_right" type="TextureButton" parent="button"]
+margin_left = 1532.87
+margin_top = 686.702
+margin_right = 1587.87
+margin_bottom = 773.702
+rect_rotation = 180.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 3 )
+texture_focused = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="winners" type="TextEdit" parent="button"]
+modulate = Color( 0.447059, 1, 0.784314, 1 )
+margin_left = 845.279
+margin_top = 300.654
+margin_right = 1080.28
+margin_bottom = 409.654
+custom_fonts/font = SubResource( 4 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="water_need" type="TextEdit" parent="button"]
+modulate = Color( 0.447059, 1, 0.784314, 1 )
+margin_left = 852.768
+margin_top = 765.248
+margin_right = 1087.77
+margin_bottom = 874.248
+custom_fonts/font = SubResource( 4 )
+text = "35"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="food_need" type="TextEdit" parent="button"]
+modulate = Color( 0.447059, 1, 0.784314, 1 )
+margin_left = 850.677
+margin_top = 939.019
+margin_right = 1085.68
+margin_bottom = 1048.02
+custom_fonts/font = SubResource( 4 )
+text = "30"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="group" type="CheckBox" parent="button"]
+margin_left = 1277.0
+margin_top = 300.0
+margin_right = 1301.0
+margin_bottom = 328.0
+rect_scale = Vector2( 4.34719, 4.03622 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="arena" type="CheckBox" parent="button"]
+margin_left = 1657.57
+margin_top = 297.003
+margin_right = 1681.57
+margin_bottom = 325.003
+rect_scale = Vector2( 4.34719, 4.03622 )
+pressed = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="start_button" type="TextureButton" parent="button"]
+margin_left = 1624.0
+margin_top = 945.0
+margin_right = 1886.0
+margin_bottom = 1060.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="back_button" type="TextureButton" parent="button"]
+margin_left = 1624.0
+margin_top = 775.139
+margin_right = 1886.0
+margin_bottom = 890.139
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player" parent="." instance=ExtResource( 7 )]
+
+[node name="szene_changer" parent="." instance=ExtResource( 8 )]
+visible = false
+
+[connection signal="pressed" from="button/death_risk_left" to="." method="_on_death_risk_left_pressed"]
+[connection signal="pressed" from="button/death_risk_right" to="." method="_on_death_risk_right_pressed"]
+[connection signal="focus_exited" from="button/winners" to="." method="_on_winners_focus_exited"]
+[connection signal="focus_exited" from="button/water_need" to="." method="_on_water_need_focus_exited"]
+[connection signal="focus_exited" from="button/food_need" to="." method="_on_food_need_focus_exited"]
+[connection signal="pressed" from="button/group" to="." method="_on_group_pressed"]
+[connection signal="pressed" from="button/arena" to="." method="_on_arena_pressed"]
+[connection signal="focus_entered" from="button/start_button" to="." method="_on_start_button_focus_entered"]
+[connection signal="focus_exited" from="button/start_button" to="." method="_on_start_button_focus_exited"]
+[connection signal="mouse_entered" from="button/start_button" to="." method="_on_start_button_focus_entered"]
+[connection signal="mouse_exited" from="button/start_button" to="." method="_on_start_button_focus_exited"]
+[connection signal="pressed" from="button/start_button" to="." method="_on_start_button_pressed"]
+[connection signal="mouse_entered" from="button/back_button" to="." method="_on_back_button_mouse_entered"]
+[connection signal="mouse_exited" from="button/back_button" to="." method="_on_back_button_mouse_exited"]
+[connection signal="pressed" from="button/back_button" to="." method="_on_back_button_pressed"]

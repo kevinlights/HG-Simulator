@@ -1,0 +1,68 @@
+{
+  "1": {
+    "m": "he",
+    "w": "she",
+    "d": "they",
+    "re": "he/she"
+  },
+  "2": {
+    "m": "him",
+    "w": "her",
+    "d": "them",
+    "re": "him/her"
+  },
+  "3": {
+    "m": "himself",
+    "w": "herself",
+    "d": "themselves",
+    "re": "himself/herself"
+  },
+  "4": {
+    "m": "his",
+    "w": "her",
+    "d": "their",
+    "re": "his/her"
+  },
+  "5": {
+    "m": "He",
+    "w": "She",
+    "d": "They",
+    "re": "He/She"
+  },
+  "6": {
+    "m": "Him",
+    "w": "Her",
+    "d": "Them",
+    "re": "Him/Her"
+  },
+  "7": {
+    "m": "Himself",
+    "w": "Herself",
+    "d": "Themselves",
+    "re": "Himself/Herself"
+  },
+  "8": {
+    "m": "His",
+    "w": "Her",
+    "d": "Their",
+    "re": "His/Her"
+  },
+  "9": {
+    "m": "his",
+    "w": "hers",
+    "d": "theirs",
+    "re": "his/hers"
+  },
+  "10": {
+    "m": "His",
+    "w": "Hers",
+    "d": "Theirs",
+    "re": "His/Hers"
+  },
+  "11": {
+    "m": "Tom",
+    "w": "She-cat",
+    "d": "cat",
+    "re": "Tom/She-cat"
+  }
+}

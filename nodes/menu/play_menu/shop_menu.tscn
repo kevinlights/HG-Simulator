@@ -1,0 +1,414 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://fonts/Play-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://image/menu/play_menu/item_box.png" type="Texture" id=2]
+[ext_resource path="res://image/menu/play_menu/back_shop.png" type="Texture" id=3]
+[ext_resource path="res://image/menu/option_menu/x.png" type="Texture" id=4]
+[ext_resource path="res://scripts/menu/play_menu/shop_menu.gd" type="Script" id=5]
+[ext_resource path="res://nodes/system/player.tscn" type="PackedScene" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 45
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 33
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 35
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 70
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=7]
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("label/hint_3:custom_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.603922, 0.517647, 0.517647, 0 ), Color( 0.603922, 0.517647, 0.517647, 1 ), Color( 0.603922, 0.517647, 0.517647, 1 ), Color( 0.603922, 0.517647, 0.517647, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("label/hint_3:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 650, 25.055 ), Vector2( 650, 100.4 ) ]
+}
+
+[node name="shop_menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="back_shop" type="Sprite" parent="."]
+position = Vector2( 956.02, 542.512 )
+scale = Vector2( 1.01012, 1.01379 )
+texture = ExtResource( 3 )
+
+[node name="background" type="Node2D" parent="."]
+
+[node name="food" type="Sprite" parent="background"]
+position = Vector2( 883.573, 798 )
+texture = ExtResource( 2 )
+
+[node name="water" type="Sprite" parent="background"]
+position = Vector2( 1259.34, 798 )
+scale = Vector2( 1, 1.00975 )
+texture = ExtResource( 2 )
+
+[node name="health" type="Sprite" parent="background"]
+position = Vector2( 1627.95, 798 )
+scale = Vector2( 1, 1.00975 )
+texture = ExtResource( 2 )
+
+[node name="immun" type="Sprite" parent="background"]
+position = Vector2( 1153.59, 525 )
+scale = Vector2( 1, 1.00975 )
+texture = ExtResource( 2 )
+
+[node name="immun_add" type="Sprite" parent="background"]
+position = Vector2( 1697, 525 )
+scale = Vector2( 1, 1.00975 )
+texture = ExtResource( 2 )
+
+[node name="dead_add" type="Sprite" parent="background"]
+position = Vector2( 1697, 309.754 )
+scale = Vector2( 1, 1.00975 )
+texture = ExtResource( 2 )
+
+[node name="exit" type="Sprite" parent="background"]
+position = Vector2( 1739.76, 90.5929 )
+scale = Vector2( 1, 1.00975 )
+texture = ExtResource( 2 )
+
+[node name="label" type="Node2D" parent="."]
+
+[node name="add_item_points" type="RichTextLabel" parent="label"]
+margin_left = 1035.77
+margin_top = 950.524
+margin_right = 1527.77
+margin_bottom = 1026.52
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "Add item points"
+text = "Add item points"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="add_imun" type="RichTextLabel" parent="label"]
+margin_left = 1637.95
+margin_top = 486.0
+margin_right = 1765.95
+margin_bottom = 562.0
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "Add"
+text = "Add"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="add_dead" type="RichTextLabel" parent="label"]
+margin_left = 1644.0
+margin_top = 273.0
+margin_right = 1750.0
+margin_bottom = 347.0
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "Kill"
+text = "Kill"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="i_part_1" type="Label" parent="label"]
+margin_left = 670.0
+margin_top = 467.0
+margin_right = 996.0
+margin_bottom = 575.0
+rect_pivot_offset = Vector2( 79.0731, 74.0153 )
+custom_fonts/font = SubResource( 2 )
+text = "Immunity for"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="i_part_2" type="Label" parent="label"]
+margin_left = 1286.1
+margin_top = 472.066
+margin_right = 1551.1
+margin_bottom = 580.066
+custom_fonts/font = SubResource( 2 )
+text = "Daytimes"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="food_label" type="Label" parent="label"]
+margin_left = 692.0
+margin_top = 650.0
+margin_right = 1077.0
+margin_bottom = 751.0
+custom_fonts/font = SubResource( 2 )
+text = "Food points"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="water_label" type="Label" parent="label"]
+margin_left = 1069.0
+margin_top = 650.0
+margin_right = 1441.0
+margin_bottom = 751.0
+custom_fonts/font = SubResource( 2 )
+text = "Water points"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="health_label" type="Label" parent="label"]
+margin_left = 1445.85
+margin_top = 650.0
+margin_right = 1817.85
+margin_bottom = 751.0
+custom_fonts/font = SubResource( 2 )
+text = "Health points"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dead_text" type="Label" parent="label"]
+margin_left = 659.0
+margin_top = 231.0
+margin_right = 1559.0
+margin_bottom = 387.0
+custom_fonts/font = SubResource( 3 )
+text = "This will eliminate the chosen tributes."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fav_text" type="Label" parent="label"]
+margin_left = 1.0
+margin_top = 87.0
+margin_right = 626.0
+margin_bottom = 168.0
+custom_fonts/font = SubResource( 4 )
+text = "The most popular tribut that
+the day is"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hint_1" type="Label" parent="label"]
+margin_left = 668.808
+margin_top = 593.92
+margin_right = 1064.81
+margin_bottom = 639.92
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0.603922, 0.517647, 0.517647, 1 )
+text = "* 4 Daytimes is one day."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hint_2" type="Label" parent="label"]
+margin_left = 664.64
+margin_top = 876.118
+margin_right = 1060.64
+margin_bottom = 922.118
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0.603922, 0.517647, 0.517647, 1 )
+text = "* Just tip in the boxes the number of points you want to be added."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hint_3" type="Label" parent="label"]
+margin_left = 650.0
+margin_top = 100.4
+margin_right = 1734.0
+margin_bottom = 146.4
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0.603922, 0.517647, 0.517647, 0 )
+text = "The item points have been added."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttons" type="Node2D" parent="."]
+
+[node name="water" type="TextEdit" parent="buttons"]
+modulate = Color( 0.447059, 1, 0.784314, 1 )
+margin_left = 1142.69
+margin_top = 745.766
+margin_right = 1377.69
+margin_bottom = 854.766
+custom_fonts/font = SubResource( 6 )
+text = "100"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="food" type="TextEdit" parent="buttons"]
+modulate = Color( 0.447059, 1, 0.784314, 1 )
+margin_left = 764.696
+margin_top = 745.766
+margin_right = 999.696
+margin_bottom = 854.766
+custom_fonts/font = SubResource( 6 )
+text = "100"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="health" type="TextEdit" parent="buttons"]
+modulate = Color( 0.447059, 1, 0.784314, 1 )
+margin_left = 1514.75
+margin_top = 746.907
+margin_right = 1749.75
+margin_bottom = 855.907
+custom_fonts/font = SubResource( 6 )
+text = "100"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="immun" type="TextEdit" parent="buttons"]
+modulate = Color( 0.447059, 1, 0.784314, 1 )
+margin_left = 1040.4
+margin_top = 472.99
+margin_right = 1275.4
+margin_bottom = 581.99
+custom_fonts/font = SubResource( 6 )
+text = "8"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="add_immun" type="TextureButton" parent="buttons"]
+margin_left = 1564.0
+margin_top = 468.0
+margin_right = 1826.0
+margin_bottom = 587.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="add_death" type="TextureButton" parent="buttons"]
+margin_left = 1566.52
+margin_top = 251.294
+margin_right = 1828.52
+margin_bottom = 370.294
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="add_items" type="TextureButton" parent="buttons"]
+margin_left = 659.0
+margin_top = 936.0
+margin_right = 1852.0
+margin_bottom = 1046.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="x" type="TextureButton" parent="buttons"]
+margin_left = 1691.18
+margin_top = 43.4138
+margin_right = 1794.18
+margin_bottom = 136.414
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 4 )
+texture_focused = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="exit" type="TextureButton" parent="buttons"]
+margin_left = 1623.0
+margin_top = 38.0
+margin_right = 1866.0
+margin_bottom = 148.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="icon_scroll" type="ScrollContainer" parent="."]
+margin_left = 36.0
+margin_top = 196.0
+margin_right = 626.0
+margin_bottom = 1030.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vbox" type="VBoxContainer" parent="icon_scroll"]
+
+[node name="animation" type="AnimationPlayer" parent="."]
+anims/text_popup = SubResource( 7 )
+
+[node name="player" parent="." instance=ExtResource( 6 )]
+
+[connection signal="focus_exited" from="buttons/water" to="." method="_on_water_focus_exited"]
+[connection signal="focus_exited" from="buttons/food" to="." method="_on_food_focus_exited"]
+[connection signal="focus_exited" from="buttons/health" to="." method="_on_health_focus_exited"]
+[connection signal="focus_exited" from="buttons/immun" to="." method="_on_immun_focus_exited"]
+[connection signal="mouse_entered" from="buttons/add_immun" to="." method="_on_add_immun_mouse_entered"]
+[connection signal="mouse_exited" from="buttons/add_immun" to="." method="_on_add_immun_mouse_exited"]
+[connection signal="pressed" from="buttons/add_immun" to="." method="_on_add_immun_pressed"]
+[connection signal="mouse_entered" from="buttons/add_death" to="." method="_on_add_death_mouse_entered"]
+[connection signal="mouse_exited" from="buttons/add_death" to="." method="_on_add_death_mouse_exited"]
+[connection signal="pressed" from="buttons/add_death" to="." method="_on_add_death_pressed"]
+[connection signal="mouse_entered" from="buttons/add_items" to="." method="_on_add_items_mouse_entered"]
+[connection signal="mouse_exited" from="buttons/add_items" to="." method="_on_add_items_mouse_exited"]
+[connection signal="pressed" from="buttons/add_items" to="." method="_on_add_items_pressed"]
+[connection signal="pressed" from="buttons/exit" to="." method="_on_exit_pressed"]
